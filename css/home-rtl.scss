@@ -1,0 +1,65 @@
+@import "sass/helpers/variables";
+@import "sass/helpers/mixing";
+@import "sass/helpers/functions";
+@import "sass/pages/global";
+nav{
+    .navbar-nav{
+        .nav-item {
+            .nav-link{
+                &:hover{
+                    @media #{$maxMd}{
+                        padding-right: 15px !important;
+                    }
+                }
+            }
+          }
+        }
+    }
+
+    .services{
+        .service-box{
+            a{
+                color: $mainColor;
+                &::after{
+                    content: "\f100";
+                    font-family: FontAwesome;
+                    padding-right: 7px;
+                }
+            }
+        }
+    }
+
+    .players{
+        .card{
+            a{
+                padding: 0 15px 15px;
+                color: $mainColor;
+                &::after{
+                    content: "\f100";
+                    font-family: FontAwesome;
+                    padding-right: 7px;
+                }
+            }
+        }
+    }
+
+    footer{
+        .gallery{
+            .media{
+                img{
+                    width: 140px;
+                    height: 140px;
+                }
+                h5{
+                    @media #{$maxXs} {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .info{
+            .list-unstyled{
+                padding-right: 0;
+            }
+        }
+    }

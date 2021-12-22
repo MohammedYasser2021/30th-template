@@ -1,0 +1,41 @@
+nav{
+    padding: 20px!important;
+    .logo{
+        flex-direction: column;
+        .navbar-brand h4{
+            color: #222;
+            @media #{$maxXs}{
+                font-size: 18px;
+            }
+        }
+        p{
+            @media #{$maxXs}{
+                font-size: 14px;
+            }
+        }
+    }
+    .navbar-toggler{
+        background-color: $mainColor;
+        .navbar-toggler-icon i{
+            color: white;
+        }
+    }
+    .navbar-nav{
+        background-color: $mainColor !important;
+        // @include opacityIE(0.5);
+        padding: 15px;
+        gap: 10px;
+        .nav-item {
+            .nav-link{
+                color: white;
+                @include prefixer (transition, 0.3s ease-in-out, webkit moz o ms);
+                &:hover{
+                    color: #ddd;
+                    @media #{$maxMd}{
+                        padding-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

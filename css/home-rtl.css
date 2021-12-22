@@ -1,0 +1,67 @@
+/* media queries variables */
+.element .child {
+  font-size: 16px;
+  font-family: tahoma;
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 7px;
+  border-right: 1px solid #f00;
+  border-left: 2px solid #00f;
+}
+
+body {
+  background-color: #f6f6f6;
+  height: 1200px;
+  font-family: tahoma;
+  font-size: 16px;
+}
+
+.container {
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  nav .navbar-nav .nav-item .nav-link:hover {
+    padding-right: 15px !important;
+  }
+}
+
+.services .service-box a {
+  color: #e2494c;
+}
+
+.services .service-box a::after {
+  content: "\f100";
+  font-family: FontAwesome;
+  padding-right: 7px;
+}
+
+.players .card a {
+  padding: 0 15px 15px;
+  color: #e2494c;
+}
+
+.players .card a::after {
+  content: "\f100";
+  font-family: FontAwesome;
+  padding-right: 7px;
+}
+
+footer .gallery .media img {
+  width: 140px;
+  height: 140px;
+}
+
+@media (max-width: 575px) {
+  footer .gallery .media h5 {
+    margin-right: 0;
+  }
+}
+
+footer .info .list-unstyled {
+  padding-right: 0;
+}
+/*# sourceMappingURL=home-rtl.css.map */

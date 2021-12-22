@@ -1,0 +1,62 @@
+/* start services */
+.services{
+    .service-box{
+        background-color: white;
+        padding: 15px;
+        border-radius: 7px;
+        h3{
+            margin-bottom: 15px;
+        }
+        p{
+            line-height: 1.7;
+            color: $greyColor;
+        }
+        a{
+            color: $mainColor;
+            &::after{
+                content: "\f101";
+                font-family: FontAwesome;
+                padding-left: 7px;
+            }
+        }
+    }
+}
+/* end services */
+/* start players */
+.players{
+    .card{
+        .card-title{
+            padding: 15px 15px 0;
+            font-weight: normal;
+            span{
+                font-weight: 600;
+            }
+        }
+        .card-text{
+            line-height: 1.7;
+            color: $greyColor;
+            padding: 15px 15px 0;
+        }
+        a{
+            padding: 0 15px 15px;
+            color: $mainColor;
+            &::after{
+                content: "\f101";
+                font-family: FontAwesome;
+                padding-left: 7px;
+            }
+        }
+    }
+}
+/* end players */
+/* start lorem */
+.lorem{
+    .lorem-box{
+        padding-bottom: 40px;
+        img{
+            height: 250px;
+            width: 100%
+        }
+    }
+}
+/* end lorem */
